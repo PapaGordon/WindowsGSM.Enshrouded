@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <PluginCheckTargetFramework Condition="'$(PluginCheckTargetFramework)' == ''">net8.0-windows8.0</PluginCheckTargetFramework>
+    <TargetFramework>$(PluginCheckTargetFramework)</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>6</LangVersion>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+    <WindowsGSMDirectory Condition="'$(WindowsGSMDirectory)' == ''">$(MSBuildThisFileDirectory)..\..\WindowsGSM\WindowsGSM\bin\Release\net8.0-windows8.0</WindowsGSMDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Enshrouded.cs/Enshrouded.cs" Link="Enshrouded.cs" />
+    <Reference Include="WindowsGSM">
+      <HintPath>$(WindowsGSMDirectory)\WindowsGSM.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(WindowsGSMDirectory)\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CheckWindowsGSMDirectory" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(WindowsGSMDirectory)\WindowsGSM.dll')" Text="Set WindowsGSMDirectory to a built WindowsGSM folder containing WindowsGSM.dll and Newtonsoft.Json.dll." />
+  </Target>
+</Project>
