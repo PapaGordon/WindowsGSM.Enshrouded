@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Raziel7893/WindowsGSM/releases/tag/v1.25.2.2"><img src="https://img.shields.io/badge/WindowsGSM-Raziel%20v1.25.2.2-38CDD4" alt="Raziel WindowsGSM v1.25.2.2"></a>
+  <a href="https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0"><img src="https://img.shields.io/badge/WindowsGSM-MeFriendos%20v1.25.3.0-38CDD4" alt="MeFriendos WindowsGSM v1.25.3.0"></a>
   <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-0.1.0-34c9eb" alt="Version 0.1.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
 </p>
@@ -48,7 +48,9 @@ Enshrouded uses `queryPort` in its configuration. Set **Server Query Port** in W
 
 ## Installation
 
-1. Use a compatible WindowsGSM build on 64-bit Windows. Our current [WindowsGSM build](https://github.com/PapaGordon/WindowsGSM) includes firewall management.
+MeFriendos uses this plugin with [WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0). The Windows x64 download includes the .NET runtime.
+
+1. Download [MeFriendos WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0) for 64-bit Windows. It includes firewall management.
 2. Copy the complete `Enshrouded.cs` folder into `<WindowsGSM>\plugins\`.
 3. Click **Reload Plugins** or restart WindowsGSM.
 4. Add **Enshrouded Dedicated Server** and run **Install**.
@@ -104,11 +106,11 @@ Local validation on 2026-10-22:
 - All 37 checks passed on .NET 10 and again on .NET 8.0.29 against the real WindowsGSM assembly.
 - The .NET 8 compatibility run was compiled directly against the installed runtime assemblies because the .NET 8 targeting pack was unavailable. That compilation reported one `CS1701` assembly-version warning for Newtonsoft.Json's .NET 6 reference to `System.Linq.Expressions`; the .NET 8 run passed.
 
-A live check still needs to cover SteamCMD install/update, Enshrouded startup, A2S responses, client connections, live log output and a completed world save during CTRL+C shutdown.
+The automated checks do not cover SteamCMD install/update, Enshrouded startup, A2S responses, client connections, live log output or a completed world save during CTRL+C shutdown.
 
 ## Links
 
-- [MeFriendos WindowsGSM](https://github.com/PapaGordon/WindowsGSM)
+- [MeFriendos WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0)
 - [Original plugin](https://github.com/ohmcodes/WindowsGSM.Enshrouded)
 - [Official dedicated server configuration](https://enshrouded.zendesk.com/hc/en-us/articles/16055441447709-Dedicated-Server-Configuration)
 - [Official server roles configuration](https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration)
