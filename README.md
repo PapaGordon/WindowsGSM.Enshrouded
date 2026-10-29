@@ -9,12 +9,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0"><img src="https://img.shields.io/badge/WindowsGSM-MeFriendos%20v1.25.3.0-38CDD4" alt="MeFriendos WindowsGSM v1.25.3.0"></a>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-0.1.0-34c9eb" alt="Version 0.1.0"></a>
+  <a href="https://github.com/PapaGordon/WindowsGSM/releases/latest"><img src="https://img.shields.io/badge/WindowsGSM-MeFriendos%20latest-38CDD4" alt="Latest MeFriendos WindowsGSM"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-0.1.1-34c9eb" alt="Version 0.1.1"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
 </p>
 
 Based on the Enshrouded plugin by [ohmcodes](https://github.com/ohmcodes/WindowsGSM.Enshrouded), with the same MeFriendos layout and console handling as our other WindowsGSM plugins.
+
+
+## WindowsGSM and Steam login
+
+Use the [latest MeFriendos WindowsGSM release](https://github.com/PapaGordon/WindowsGSM/releases/latest). This server is already built into that fork, so select its normal built-in entry there. The standalone plugin remains available for other compatible WindowsGSM builds.
+
+This dedicated server uses anonymous SteamCMD downloads. It does not read or require your Steam password, so encrypted account credentials do not change its installation or updates.
+
+The plugin leaves firewall management to the host. On other WindowsGSM builds, configure game/query port rules manually if the host does not manage them. Router forwarding is separate.
 
 ## Features
 
@@ -48,9 +57,9 @@ Enshrouded uses `queryPort` in its configuration. Set **Server Query Port** in W
 
 ## Installation
 
-MeFriendos uses this plugin with [WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0). The Windows x64 download includes the .NET runtime.
+MeFriendos uses this plugin with [WindowsGSM (latest release)](https://github.com/PapaGordon/WindowsGSM/releases/latest). The Windows x64 download includes the .NET runtime.
 
-1. Download [MeFriendos WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0) for 64-bit Windows. It includes firewall management.
+1. Download [MeFriendos WindowsGSM (latest release)](https://github.com/PapaGordon/WindowsGSM/releases/latest) for 64-bit Windows. It includes firewall management.
 2. Copy the complete `Enshrouded.cs` folder into `<WindowsGSM>\plugins\`.
 3. Click **Reload Plugins** or restart WindowsGSM.
 4. Add **Enshrouded Dedicated Server** and run **Install**.
@@ -110,7 +119,7 @@ The automated checks do not cover SteamCMD install/update, Enshrouded startup, A
 
 ## Links
 
-- [MeFriendos WindowsGSM v1.25.3.0](https://github.com/PapaGordon/WindowsGSM/releases/tag/v1.25.3.0)
+- [MeFriendos WindowsGSM (latest release)](https://github.com/PapaGordon/WindowsGSM/releases/latest)
 - [Original plugin](https://github.com/ohmcodes/WindowsGSM.Enshrouded)
 - [Official dedicated server configuration](https://enshrouded.zendesk.com/hc/en-us/articles/16055441447709-Dedicated-Server-Configuration)
 - [Official server roles configuration](https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration)

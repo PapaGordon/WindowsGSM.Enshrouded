@@ -25,7 +25,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.Enshrouded",
             author = "MeFriendos",
             description = "WindowsGSM plugin for Enshrouded Dedicated Server (MeFriendos build)",
-            version = "0.1.0",
+            version = "0.1.1",
             url = "https://github.com/PapaGordon/WindowsGSM.Enshrouded",
             color = "#34c9eb"
         };

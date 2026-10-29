@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 - 2026-10-29
+
+- Refreshes the README links, current WindowsGSM guidance and Steam credential compatibility notes.
+- Uses the current canonical repository URL. Server runtime behavior is unchanged.
+
+
 ## 0.1.0 - 2026-10-22
 
 - Added the MeFriendos build based on the ohmcodes Enshrouded plugin.
