@@ -128,4 +128,4 @@ The automated checks do not cover SteamCMD install/update, Enshrouded startup, A
 
 ## License
 
-Made by PapaGordon for MeFriendos. Based on the original plugin by ohmcodes. The original MIT notice is retained in [LICENSE](LICENSE).
+Based on the original plugin by ohmcodes. The original MIT notice is retained in [LICENSE](LICENSE).
